@@ -1,0 +1,13 @@
+﻿@model LoginWeb.Models.LogModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    @Html.TextBoxFor(m => m.userName);
+    @Html.PasswordFor(m => m.password);
+    <input type="submit" name="name" value="submit" />
+}
